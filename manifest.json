@@ -1,0 +1,11 @@
+{
+    "name": "Bulaloi's Automation",
+    "version": "1.0.0",
+    "description": "Browser Automator",
+    "manifest_version": 3,
+    "Author": "Ame Suzuki",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Bulaloi's Automation"
+    }
+}
