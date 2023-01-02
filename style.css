@@ -7,7 +7,7 @@ html,body {
     overflow-y: hidden;
 }
 
-.container {
+#container {
     position: relative;
     top: 20px;
     border: solid thin;
@@ -15,7 +15,50 @@ html,body {
     width: 290px;
     justify-content: center;
     position: relative;
-    left: 600px;
+    left: 40%;
+    
+}
+
+#main_button {
+    width: 100px;
+    height: 80px;
+    border: solid thin;
+    border-radius: 6px;
+    font-size: larger;
+}
+
+#sub_buttons {
+    width: 1px;
+    position: relative;
+    bottom: 30px;
+    left: -51px;
+    display: inline;
+}
+
+#setting_button {
+    position: relative;
+    left: 3px;
+}
+
+.sub_buttons_real {
+    width: 21px;
+    font-size: 10px;
+}
+
+ol {
+    position: relative;
+    right: 17px;
+}
+
+form {
+    position: relative;
+    left: 7px;
+}
+
+#save {
+    text-align: right;
+    position: relative;
+    right: 10px;
 }
 
 h1 {

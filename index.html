@@ -7,19 +7,33 @@
     <title>Bulaloi's Automation</title>
 </head>
 <body>
-    <div class="container">
+
+    <div id="container">
         <h1>Bulaloi's Automator</h1>
         <hr>
         <div class="form">
-            <form onsubmit="return processForm()">
+            <form onsubmit="processForm()">
                 <input type="text" id="name">
                 <input type="submit" value="Add">
+                <input id="reset_button" type="button" value="Reset" onclick="reset_URLS()">
             </form>
         </div>
-        <div class="URL's-Container">
-            <ol>
-                <li>sad</li>
+        <div class="URLs-Container">
+            <ol id="list">
             </ol>
+        </div>
+        <div id="save">
+            <button onclick="hide_setting_to_show_start_button()">Save</button>
+        </div>
+    </div>
+
+    <div id="start_button">
+        <button id="main_button" onclick="open_all_URL()">START</button>
+        
+        <div id="sub_buttons">
+            <input type="button" value="<>" id="setting_button" class="sub_buttons_real" onclick="setting_button()">
+            <input type="button" value="X" id="exit_button" class="sub_buttons_real" onclick="
+            (function () { document.getElementById('start_button').style.visibility = 'hidden'})()">
         </div>
     </div>
 
