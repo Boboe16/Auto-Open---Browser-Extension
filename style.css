@@ -15,10 +15,13 @@ html,body {
     width: 290px;
     justify-content: center;
     position: relative;
-    left: 40%;
-    
+    right: 10px;
+    float: right;
+    visibility: hidden;
 }
-
+#start_button {
+    visibility: visible;
+}
 #main_button {
     width: 100px;
     height: 80px;

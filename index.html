@@ -1,3 +1,5 @@
+<!--I removed the onsubmit='processForm()' but it still becomes hidden when i press the submit-->
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
@@ -12,7 +14,7 @@
         <h1>Bulaloi's Automator</h1>
         <hr>
         <div class="form">
-            <form onsubmit="processForm()">
+            <form onsubmit="processForm(event)">
                 <input type="text" id="name">
                 <input type="submit" value="Add">
                 <input id="reset_button" type="button" value="Reset" onclick="reset_URLS()">
