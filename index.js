@@ -1,5 +1,3 @@
-// Is this script considered intermediate?
-
 function setting_button() {
     document.getElementById('container').style.visibility = 'visible'
     document.getElementById('start_button').style.visibility = 'hidden'
