@@ -36,15 +36,11 @@ function open_all_URL() {
     openTabs();
   }
 
-show_saved_URL()
+//show_saved_URL()
 
 function show_saved_URL() { // Show's the URLS by creating a li inside ul
-    try {
-        let all_list = document.querySelectorAll('li')
-        for (let i = 0; i < 10; i++) {
-            all_list[i].remove()
-        }
-    }catch {
+
+    function show_saved_URL_component() {
         for (let i = 0; i < localStorage.length; i++) {
             let keys = localStorage.key(i)
             let ul = document.getElementById('list')
@@ -53,6 +49,24 @@ function show_saved_URL() { // Show's the URLS by creating a li inside ul
             ul.appendChild(create_child_elements)
         }
     }
+    
+    let delete_all_list = new Promise((resolve, reject) => {
+        let all_list = document.querySelectorAll('li')
+        for (let i = 0; i < localStorage.length; i++) {
+            all_list[i].remove()
+            resolve(); 
+        }
+    });
+        
+    delete_all_list
+        .then(success => {
+        show_saved_URL_component()
+        console.log('success')
+        })
+        .catch(error => {
+        show_saved_URL_component()
+        console.log('failed');
+        })
 }
 
 function save_data_component_1(URL) {
@@ -99,13 +113,13 @@ async function save_data(URL) {
         }
 }
 
-function processForm(event) {
+async function processForm(event) {
     // if (localStorage.length == 3) {
     //     return
     // }
     let URL = document.getElementById('name').value;
-    save_data(URL);
-    show_saved_URL();
+    await save_data(URL);
+    await show_saved_URL();
     document.getElementById('name').value = ''
     event.preventDefault();
 }
