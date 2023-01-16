@@ -111,12 +111,49 @@ async function save_data(URL) {
         } catch (error) {
             console.log('URL3 is filled')
         }
+    try {
+        return await save_data_component_2(3,4,URL,4)
+        } catch (error) {
+            console.log('URL4 is filled')
+        }
+    try {
+        return await save_data_component_2(4,5,URL,5)
+        } catch (error) {
+            console.log('URL5 is filled')
+        }
+    try {
+        return await save_data_component_2(5,6,URL,6)
+        } catch (error) {
+            console.log('URL6 is filled')
+        }
+    try {
+        return await save_data_component_2(6,7,URL,7)
+        } catch (error) {
+            console.log('URL7 is filled')
+        }
+    try {
+        return await save_data_component_2(7,8,URL,8)
+        } catch (error) {
+            console.log('URL8 is filled')
+        }
+    try {
+        return await save_data_component_2(8,9,URL,9)
+        } catch (error) {
+            console.log('URL9 is filled')
+        }
+    try {
+        return await save_data_component_2(8,10,URL,10)
+        } catch (error) {
+            console.log('URL3 is filled')
+        }
+    try {
+        return await save_data_component_2(2,3,URL,3)
+        } catch (error) {
+            console.log('URL3 is filled')
+        }        
 }
 
 async function processForm(event) {
-    // if (localStorage.length == 3) {
-    //     return
-    // }
     let URL = document.getElementById('name').value;
     await save_data(URL);
     await show_saved_URL();
