@@ -1,6 +1,6 @@
 html,body {
-    width: 100%;
-    height: 100%;
+    width: 292px;
+    height: 267.156px;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -9,43 +9,10 @@ html,body {
 
 #container {
     position: relative;
-    top: 20px;
-    border: solid thin;
-    border-radius: 6px;
-    width: 290px;
+    top: 14px;
+    width: 292px;
+    height: 267.156px;
     justify-content: center;
-    position: relative;
-    right: 10px;
-    float: right;
-    visibility: hidden;
-}
-#start_button {
-    visibility: visible;
-}
-#main_button {
-    width: 100px;
-    height: 80px;
-    border: solid thin;
-    border-radius: 6px;
-    font-size: larger;
-}
-
-#sub_buttons {
-    width: 1px;
-    position: relative;
-    bottom: 30px;
-    left: -51px;
-    display: inline;
-}
-
-#setting_button {
-    position: relative;
-    left: 3px;
-}
-
-.sub_buttons_real {
-    width: 21px;
-    font-size: 10px;
 }
 
 ol {
@@ -58,10 +25,11 @@ form {
     left: 7px;
 }
 
-#save {
-    text-align: right;
-    position: relative;
-    right: 10px;
+#start {
+    float: right;
+    position: absolute;
+    top: 230px;
+    right: 8px;
 }
 
 h1 {

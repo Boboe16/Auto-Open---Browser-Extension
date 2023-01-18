@@ -1,12 +1,20 @@
-function setting_button() {
-    document.getElementById('container').style.visibility = 'visible'
-    document.getElementById('start_button').style.visibility = 'hidden'
-}
+let form = document.querySelector('form')
+form.addEventListener('submit', 
+function() {
+    processForm(event)
+})
 
-function hide_setting_to_show_start_button() {
-    document.getElementById('container').style.visibility = 'hidden'
-    document.getElementById('start_button').style.visibility = 'visible'
-}
+let reset = document.querySelector('#reset_button')
+reset.addEventListener('click', 
+function() {
+    reset_URLS()
+})
+
+let start = document.querySelector('#start')
+start.addEventListener('click', 
+function() {
+    open_all_URL()
+})
 
 function reset_URLS() {
     try {
@@ -23,9 +31,8 @@ function reset_URLS() {
 function open_all_URL() {
     let numTabsToOpen = 10;  // number of tabs to open at a time
     let delay = 1000;  // delay in milliseconds between batches of tab openings
-    let i = 0;
-    let openTabs = () => {
-      for (; i < localStorage.length && i < numTabsToOpen; i++) {
+    function openTabs() {
+      for (let i = 0; i < localStorage.length && i < numTabsToOpen; i++) {
         let keys = localStorage.key(i);
         window.open(`${localStorage.getItem(keys)}`, '_blank');
       }
@@ -34,9 +41,9 @@ function open_all_URL() {
       }                              // Open the next batch of tabs after a delay
     };    
     openTabs();
-  }
+}
 
-//show_saved_URL()
+show_saved_URL()
 
 function show_saved_URL() { // Show's the URLS by creating a li inside ul
 
