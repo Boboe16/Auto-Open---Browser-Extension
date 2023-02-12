@@ -1,4 +1,4 @@
-<h1>Readme</h1?
+<h1>Readme</h1>
 Tired of manually opening multiple websites every day? Say goodbye to tedious browsing with Bulaloi's Automator! With just one click, open up to 5-10 websites simultaneously and save time. Bulaloi's Automator is the perfect tool for busy individuals, professionals, and companies. Get more done in less time and make browsing a breeze. Try Bulaloi's Automator today and simplify your online experience!
 This is an Chrome extension that provides functionality to save, show and open multiple URLs. This extension is written in JavaScript and uses the local storage of the browser to save URLs.
 
