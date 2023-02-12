@@ -3,12 +3,13 @@ Tired of manually opening multiple websites every day? Say goodbye to tedious br
 This is an Chrome extension that provides functionality to save, show and open multiple URLs. This extension is written in JavaScript and uses the local storage of the browser to save URLs.
 
 <h1>How to Use</h1>
-1.Download the code from the repository and unzip it.
-
-2.Open Google Chrome and go to chrome://extensions/
-3.Enable the developer mode from the top-right corner.
-4.Click on "Load Unpacked" and select the unzipped folder.
-5.The extension will be added to the browser, and you can access it from the browser toolbar.
+<ol>
+  <li>1.Download the code from the repository and unzip it.</li>
+  <li>2.Open Google Chrome and go to chrome://extensions/</li>
+  <li>3.Enable the developer mode from the top-right corner.</li>
+  <li>4.Click on "Load Unpacked" and select the unzipped folder.</li>
+  <li>5.The extension will be added to the browser, and you can access it from the browser toolbar.</li>
+</ol>
 
 <h1>Code Functions</h1>
 The code is written in JavaScript and has several functions. Let's discuss each function in detail.
