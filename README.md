@@ -9,6 +9,7 @@ This is an Chrome extension that provides functionality to save, show and open m
   <li>Enable the developer mode from the top-right corner.</li>
   <li>Click on "Load Unpacked" and select the unzipped folder.</li>
   <li>The extension will be added to the browser, and you can access it from the browser toolbar.</li>
+  <li>Shortcut the extension through chrome://extensions/shortcuts</li>
 </ol>
 
 <h1>Code Functions</h1>
