@@ -4,8 +4,10 @@ This is an Chrome extension that provides functionality to save, show and open m
 
 <h1>How to Use</h1>
 1.Download the code from the repository and unzip it.
+
 2.Open Google Chrome and go to chrome://extensions/
 3.Enable the developer mode from the top-right corner.
+
 4.Click on "Load Unpacked" and select the unzipped folder.
 5.The extension will be added to the browser, and you can access it from the browser toolbar.
 
