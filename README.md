@@ -4,11 +4,11 @@ This is an Chrome extension that provides functionality to save, show and open m
 
 <h1>How to Use</h1>
 <ol>
-  <li>1.Download the code from the repository and unzip it.</li>
-  <li>2.Open Google Chrome and go to chrome://extensions/</li>
-  <li>3.Enable the developer mode from the top-right corner.</li>
-  <li>4.Click on "Load Unpacked" and select the unzipped folder.</li>
-  <li>5.The extension will be added to the browser, and you can access it from the browser toolbar.</li>
+  <li>Download the code from the repository and unzip it.</li>
+  <li>Open Google Chrome and go to chrome://extensions/</li>
+  <li>Enable the developer mode from the top-right corner.</li>
+  <li>Click on "Load Unpacked" and select the unzipped folder.</li>
+  <li>The extension will be added to the browser, and you can access it from the browser toolbar.</li>
 </ol>
 
 <h1>Code Functions</h1>
